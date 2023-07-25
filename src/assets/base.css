@@ -1,0 +1,44 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#896fbb, #6d5932);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+
+}
+
+.navbar {
+  display: flex;
+  border-top: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  width: 500px;
+  height: 50px;
+  background-image: linear-gradient(#6C9BCF, #654E92);
+  box-shadow: 0 0 18px 2px #A5C0DD;
+  bottom: 10px;
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #ddcba7;
+  font-family: 'Fira Code', monospace;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(105, 41, 41);
+  font-size: x-large;
+}
+
+.nav-buttons {
+  display: flex;
+  height: 50px;
+  width: 140px;
+  text-align: center;
+}
