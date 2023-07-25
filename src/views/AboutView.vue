@@ -2,10 +2,10 @@
     <div class="about-container flex w-full justify-content-center align-content-center">
         <div class="about-content mx-auto my-8 flex flex-column">
             <div class="flex flex-row gap-4">
-                <div>
-                    <img src="../assets/images/pp.jpg" alt="" height="450">
+                <div class="about-img">
+                    <img src="../assets/images/pp.jpg" alt="" height="450" style="width: 100%;">
                 </div>
-                <div>
+                <div class="about-intro">
                     <header class="about-header">
                         <span>Hey there! </span>
                         <br>
@@ -66,7 +66,7 @@
             <div class="contact-container flex flex-row ">
                 <div class="logo-container flex flex-column justify-content-center text-center">
                     <img src="../assets/images/Logo.png" alt=""
-                        height="150">
+                        height="150" style="width: 100%;">
                     <span class="logo-label">bwy</span>
                 </div>
                 <div class="text-center w-full">
@@ -94,6 +94,15 @@ import MusicIcon from '../components/icons/MusicIcon.vue'
 
 </script>
 <style>
+
+.about-img {
+    animation: 1.5s ease-out 0s 1 fadeToClear;
+}
+
+.about-intro {
+    animation: 1.5s ease-out 0s 1 slideIn;
+}
+
 .about-container {
     width: fit-content;
     background: linear-gradient(#896fbb, #6d5932);
@@ -130,6 +139,7 @@ import MusicIcon from '../components/icons/MusicIcon.vue'
     text-align: center;
     line-height: 1;
     color: rgb(43, 36, 104);
+    animation: 3s ease-out 0s 1 fadeToClear;
 }
 
 .about-box-skills {
@@ -201,6 +211,7 @@ import MusicIcon from '../components/icons/MusicIcon.vue'
     background: linear-gradient(rgba(148, 36, 36, 0.5), rgba(89, 77, 155, 0.5));
     box-shadow: 0 0 18px 2px #b28fce;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .contact-container:hover {

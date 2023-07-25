@@ -1,11 +1,10 @@
 <template>
     <div class="flex h-full w-full justify-content-center align-content-center ">
         <div class="m-auto flex flex-row gap-4">
-            <div>
+            <div class="home-img">
                 <img src="../assets/images/me.jpg" alt="" height="600">
-
             </div>
-            <div class="welcome-msg ">
+            <div class="welcome-msg">
                 <span class="header-text">#hi-i-am-<span class="name">Bryan</span>&<span class="name">Arnoco</span>!</span>
                 <br>
                 <span class="work-title">Aspiring Web <br> Developer</span>
@@ -28,11 +27,17 @@
 <style>
 .welcome-msg {
     font-family: 'Roboto', sans-serif;
+    animation: 2s ease-in-out 0s 1 slideIn;
 }
 
 .header-text {
     color: rgb(172, 170, 170);
     font-size: 40px;
+
+}
+
+.home-img {
+    animation: 1.5s ease-out 0s 1 fadeToClear;
 }
 
 .name {
@@ -58,5 +63,25 @@
     font-size: 19px;
     color: #271f38;
     font-weight: 600;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate(30%, 25%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeToClear {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
 }
 </style>
